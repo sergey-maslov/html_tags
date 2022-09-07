@@ -3,8 +3,102 @@
   <head>
   </head>
   <body>
-    <h1>Here we go!</h1>
-    <h2>That's so funny</h2>
-    <h3>What is your name?</h3>
+    <h1>Давайте знайомитись?</h1>
+    <p>Дозвольте познайомити вас зі мною і моєю сім'єю. Впевнений, ми вам сподобаємось, коли ви дізнаєтесь про нас більше.</p>
+    <a href="#me">
+      <h2>Про мене</h2>
+    </a>  
+    <a href="#wife">
+      <h2>Моя дружина</h2>
+    </a>
+    <div class="children">
+      <a href="#children">
+        <h2>Мої діти</h2>
+      </a>
+      <ol>
+        <a href="#Kasiya">
+          <li><h3>Касія</h3></li>
+        </a>
+        <a href="#Grigoriy">
+          <li><h3>Григорій</h3></li>
+        </a>
+        <a href="#Barbara">
+          <li><h3>Варвара</h3></li>
+        </a>
+      </ol>
+    </div>
+    <div id="me">
+      <img src="img/me.jpg" width="1000" alt="Sergiy Maslov">
+      <ul>
+        <li>Ім'я: Сергій Маслов</li>
+        <li>Вік: 32 роки</li>
+        <li>Місце народження: Харків</li>
+        <li>Захоплення: дизайн, футбол, фентезі, гітара</li>
+        <li>Сімейний стан: одружений</li>
+      </ul>
+    </div>
+    <div id="wife">
+      <img src="img/wife.jpg" width="1000" alt="Valeriya Maslova">
+      <ul>
+        <li>Ім'я: Валерія Маслова</li>
+        <li>Вік: 32 роки</li>
+        <li>Місце народження: Здолбунів, Рівненська обл.</li>
+        <li>Захоплення: діти, діти, діти</li>
+        <li>Сімейний стан: заміжня</li>
+      </ul>
+    </div>
+    <div id="children">
+      <div id="Kasiya">
+        <img src="img/kasiya.jpg" width="1000" alt="Valeriya Maslova">
+        <ul>
+          <li>Ім'я: Касія Маслова</li>
+          <li>Вік: 8 років</li>
+          <li>Місце народження: Харків</li>
+          <li>Захоплення: піаніно, лазання по деревах, балет</li>
+          <li>Сімейний стан: незаміжня</li>
+        </ul>
+      </div>
+      <div id="Grigoriy">
+        <img src="img/grisha.jpg" width="1000" alt="Valeriya Maslova">
+        <ul>
+          <li>Ім'я: Григорій Маслов</li>
+          <li>Вік: 6 років</li>
+          <li>Місце народження: Харків</li>
+          <li>Захоплення: каміння, монети, Minecraft, Lego</li>
+          <li>Сімейний стан: неодружений</li>
+        </ul>
+      </div>
+      <div id="#Barbara">
+        <img src="img/barbara.jpg" width="1000" alt="Valeriya Maslova">
+        <ul>
+          <li>Ім'я: Варвара Маслова</li>
+          <li>Вік: 2 роки</li>
+          <li>Місце народження: Здолбунів, Рівненська обл.</li>
+          <li>Захоплення: іграшки, малювання, тікати від батьків з голою дупою</li>
+          <li>Сімейний стан: незаміжня</li>
+        </ul>
+      </div>
+    </div>
+    <p>====================================================================================================</p>
+    <form action="#">
+      <p>Чи сподобадась вам моя сім'я?</p>
+      <input type="text" placeholder="Так, ви - фантастичні!">
+      <label for="like">
+        <p>Отже, хто вам сподобався найбільше?</p>
+        <input id="me" type="radio" name="family" checked>Сергій<br>
+        <input id="Valeriya" type="radio" name="family">Валерія<br>
+        <input id="Kasiya" type="radio" name="family">Касія<br>
+        <input id="Grigoriy" type="radio" name="family">Григорій<br>
+        <input id="Barbara" type="radio" name="family">Варвара<br>
+      </label>
+      <p>Як би ви нас охарактеризували?</p>
+      <label for="funny"><input id="funny" type="checkbox" name="personality">Веселі</label><br>
+      <label for="kind"><input id="kind" type="checkbox" name="personality">Добрі</label><br>
+      <label for="wisdom"><input id="wisdom" type="checkbox" name="personality">Мудрі</label><br>
+      <label for="sensitive"><input id="sensitive" type="checkbox" name="personality">Чуйні</label><br>
+      <label for="pretty"><input id="pretty" type="checkbox" name="personality">Красиві</label><br>
+      <label for="best"><input id="best" type="checkbox" name="personality">Ви найкращи, в мене нема слів!</label><br>
+      <button type="submit">Відповісти</button>
+    </form>
   </body>
 </html>
